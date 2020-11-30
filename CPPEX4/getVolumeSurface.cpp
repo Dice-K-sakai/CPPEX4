@@ -4,8 +4,9 @@ bool getVolumeSurface(double width, double height, double depth, double* volume,
 
 	*volume = width * height * depth;
 	*surface = 2 * ((width * height) + (height * depth) + (width * depth));
-	
-	if ((*volume || *surface) > 0) 
+
+	//if ((*volume || *surface) > 0) 
+	if(*volume > 0 || *surface > 0)
 	{
 		ans = true;
 	}

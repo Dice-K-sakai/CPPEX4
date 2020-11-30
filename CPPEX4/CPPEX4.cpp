@@ -24,8 +24,9 @@ int main()
 		cout << "奥行(m)の入力：";
 		cin >> depth;
 
-		//
-		if ((width || height || depth) >= 0) 
+		//危険
+		//if ((width || height || depth) >= 0) 
+		if(width >= 0 || height >= 0 || depth >= 0)
 		{
 			break;
 		}
